@@ -33,6 +33,14 @@ namespace GoogleAnalyticsInterop
             console.log(`[GTAG][${trackingId}] Configured!`);
         }
     }
+    export function set(valuepair: object): void {
+
+        gtag("set", valuepair);
+
+        if (this.debug) {
+            console.log(`[GTAG][${set}] value-pair: '${valuepair}'`);
+        }
+    }
 
     export function navigate(trackingId: string, href: string): void
     {

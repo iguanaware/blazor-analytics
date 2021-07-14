@@ -1,10 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+  <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
         
-        <LangVersion>8.0</LangVersion>
-        <RazorLangVersion>3.0</RazorLangVersion>
         <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
 
         <RootNamespace>Blazor.Analytics</RootNamespace>
@@ -25,6 +23,9 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryType>git</RepositoryType>
         <Copyright>Ivan Sanz Carasa (isc30)</Copyright>
+        <ApplicationIcon />
+        <OutputType>Library</OutputType>
+        <StartupObject />
     </PropertyGroup>
 
     <ItemGroup>
